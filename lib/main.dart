@@ -12,25 +12,28 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            Container( // width: 0
-              color: Colors.red,
-              width: 300,
-              height: 200,
-            ),
-            Container( // width: 0
-              color: Colors.green,
-              width: 300,
-              height: 200,
-            ),
-            Container( // width: 0
-              color: Colors.blue,
-              width: 300,
-              height: 200,
-            ),
-          ],
+        body: Container(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container( // width: 0
+                color: Colors.red,
+                width: 300,
+                height: 200,
+              ),
+              Container( // width: 0
+                color: Colors.green,
+                width: 300,
+                height: 200,
+              ),
+              Container( // width: 0
+                color: Colors.blue,
+                width: double.infinity,
+                height: 200,
+              ),
+            ],
+          ),
         )
       ),
     );
