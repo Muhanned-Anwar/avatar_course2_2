@@ -12,8 +12,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Center(
-          child: Row(
+        body: Container(
+          alignment: Alignment.center,
+          child: Column(
             children: [
               Container( // width: 0
                 color: Colors.red,
