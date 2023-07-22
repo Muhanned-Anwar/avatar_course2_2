@@ -14,8 +14,8 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: Container( // width: double.infinity
           color: Colors.black,
-          child: Row( // width: 0 >> sum(100, 200, 80, 20) = 400
-                      // height: 0 >> max(200, 300, 100, 400) = 400
+          child: Column( // width: 0 >> max(100, 200, 80, 20) = 200
+                      // height: 0 >> sum(200, 300, 100, 400) = 400
             children: [
               Container( // width: 0
                 color: Colors.red,
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
               Container(
                 color: Colors.blue,
                 width: 20,
-                height: 400,
+                height: 300,
               )
             ],
           ),
