@@ -9,9 +9,22 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: LoginScreen(),
+      theme: ThemeData(
+        useMaterial3: true,
+        scaffoldBackgroundColor: Color(0xffe8e5e5),
+        appBarTheme: const AppBarTheme(
+          centerTitle: true,
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          titleTextStyle: TextStyle(
+            fontSize: 22,
+            color: Colors.black
+          ),
+        )
+      ),
     );
   }
 }
@@ -23,17 +36,10 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: Colors.black54,
+        // elevation: 4,
+        // backgroundColor: Colors.blue,
         title: const Text(
           'Login Screen',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2,
-            wordSpacing: 4,
-          ),
         ),
         leading: const Icon(
           Icons.arrow_back_ios_new,
