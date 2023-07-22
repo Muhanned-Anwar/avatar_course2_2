@@ -12,14 +12,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Container(
-          alignment: Alignment.center,
+        body: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container( // width: 0
                 color: Colors.red,
                 width: 50,
-                height: 300,
+                height: 100,
               ),
               Container( // width: 0
                 color: Colors.green,
