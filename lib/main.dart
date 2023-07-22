@@ -9,32 +9,34 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container( // width: 0
-                color: Colors.red,
-                width: 50,
-                height: 100,
-              ),
-              Container( // width: 0
-                color: Colors.green,
-                width: 200,
-                height: 300,
-              ),
-              Container( // width: 0
-                color: Colors.blue,
-                width: 100,
-                height: 300,
-              ),
-            ],
+      home: LoginScreen(),
+    );
+  }
+}
+
+class LoginScreen extends StatelessWidget {
+  const LoginScreen({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.black54,
+        title: const Text(
+          'Login Screen',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 2,
+            wordSpacing: 4,
           ),
-        )
+        ),
+        leading: const Icon(
+          Icons.arrow_back_ios_new,
+        ),
       ),
     );
   }
