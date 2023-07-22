@@ -13,24 +13,24 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Container(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container( // width: 0
                 color: Colors.red,
-                width: 300,
-                height: 200,
+                width: 50,
+                height: 300,
               ),
               Container( // width: 0
                 color: Colors.green,
-                width: 300,
-                height: 200,
+                width: 200,
+                height: 300,
               ),
               Container( // width: 0
                 color: Colors.blue,
-                width: double.infinity,
-                height: 200,
+                width: 100,
+                height: 300,
               ),
             ],
           ),
